@@ -56,6 +56,7 @@ class GiangVien {
     }
     public  function tongLuong() {
         return $this->luong * $this->soGioGiang;
+
     }
     public function hienThiThongTin() {
         echo "Mã GV: ". $this->maGV .
