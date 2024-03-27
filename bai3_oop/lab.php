@@ -12,4 +12,4 @@
 //// tạo phương thức set cho các thuộc tính trên
 /// tạo phương thức tính tổng lương = luongCB *soGioDay
 /// //tạo phương thức hiển thị thông tin giảng viên hiển thị ra các thông tin
-//// hoten,diachi,tuoi,email,sdt,tổng lương
+//// hoten,diachi,tuoi,email,sdt,tổng lương-z

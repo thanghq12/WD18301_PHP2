@@ -1,0 +1,15 @@
+{
+    "name": "hoangquangthang/bai5",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thanghq12",
+            "email": "thanghq12@fpt.edu.vn"
+        }
+    ],
+    "require": {}
+}
