@@ -11,5 +11,8 @@
             "email": "thanghq12@fpt.edu.vn"
         }
     ],
-    "require": {}
+    "require": {
+        "phroute/phroute": "^2.2",
+        "eftec/bladeone": "^4.3"
+    }
 }
