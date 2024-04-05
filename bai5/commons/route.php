@@ -20,12 +20,15 @@ $router->get('/', function(){
 });
 //định nghĩa đường dẫn trỏ đến Product Controller
 $router->get('list-product',[App\Controllers\ProductController::class,'index']);
-
+// xây dựng route map với view add
 $router->get('add-product',[App\Controllers\ProductController::class,'addProduct']);
 $router->post('post-product',[App\Controllers\ProductController::class,'postProduct']);
 $router->get('detail-product/{id}',[App\Controllers\ProductController::class,'detail']);
-
-$router->post('edit-product/{id}',[App\Controllers\ProductController::class,'editProduct']);
+//$router->get('add-product',[App\Controllers\ProductController::class,'addProduct']);
+//$router->post('post-product',[App\Controllers\ProductController::class,'postProduct']);
+//$router->get('detail-product/{id}',[App\Controllers\ProductController::class,'detail']);
+//
+//$router->post('edit-product/{id}',[App\Controllers\ProductController::class,'editProduct']);
 // khu vực cần quan tâm -----------
 //$router->get('test', [App\Controllers\ProductController::class, 'index']);
 

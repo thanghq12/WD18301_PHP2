@@ -6,6 +6,8 @@
             <td>ID</td>
             <td>Name</td>
             <td>Price</td>
+            <td>Action</td>
+
         </tr>
         @foreach($products as $key => $value)
         <tr>

@@ -1,4 +1,8 @@
 @extends("layout.main")
 @section("content")
-    <h1>Đây là thêm sản phẩm</h1>
+   <form action="{{ BASE_URL."post-product" }}" method="POST">
+       Name<input type="text" name="name"/>
+       Price<input type="text" name="price"/>
+       <input type="submit" name="add" value="Thêm">
+   </form>
 @endsection
