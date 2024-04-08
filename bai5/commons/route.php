@@ -24,6 +24,8 @@ $router->get('list-product',[App\Controllers\ProductController::class,'index']);
 $router->get('add-product',[App\Controllers\ProductController::class,'addProduct']);
 $router->post('post-product',[App\Controllers\ProductController::class,'postProduct']);
 $router->get('detail-product/{id}',[App\Controllers\ProductController::class,'detail']);
+$router->post('edit-product/{id}',[App\Controllers\ProductController::class,'updateProduct']);
+$router->get('delete-product/{id}',[App\Controllers\ProductController::class,'deleteProduct']);
 //$router->get('add-product',[App\Controllers\ProductController::class,'addProduct']);
 //$router->post('post-product',[App\Controllers\ProductController::class,'postProduct']);
 //$router->get('detail-product/{id}',[App\Controllers\ProductController::class,'detail']);

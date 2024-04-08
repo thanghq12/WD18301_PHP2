@@ -14,7 +14,9 @@
             <td>{{ $value->id }}</td>
             <td>{{ $value->name }}</td>
             <td>{{ $value->price }}</td>
-            <td>Price</td>
+            <td><a href="{{ BASE_URL.'detail-product/'.$value->id }}">Sửa</a>
+                <a href="{{ BASE_URL.'delete-product/'.$value->id }}">Xóa</a>
+            </td>
         </tr>
         @endforeach
     </table>

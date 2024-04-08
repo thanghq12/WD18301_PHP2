@@ -33,5 +33,27 @@ class ProductController extends BaseController {
         $pro = $product->getDetailProduct($id);
         return $this->render("product.edit",compact('pro'));
     }
+    public function updateProduct($id) {
+        if (isset($_POST['edit'])) {
+            $name = $_POST['name'];
+            $price = $_POST['price'];
+            $product = new Product();
+            $product->updateProduct($id,$name,$price);
+            echo "sửa thành công";
+        }
+    }
+    public function deleteProduct($id) {
+        $product = new Product();
+        $product->deleteProduct($id);
+        echo "Xóa thành công";
+    }
 
 }
+
+// bài ASS GD 2
+// tạo CSDL QLKH gôồm các bảng sau
+//Category(id,name ) // thực hiện chưức năng thêm sưửa xóa hiển thị danh sách
+//Customer (id,name,email)// thực hiện chưức năng thêm sưửa xóa hiển thị danh sách
+//Couse (id,name,price,category_id ) // thực hiện chức năng thêm sửa xóa
+//yêu cầu xây dựng chức năng trên base đã học
+// mỗi bảng sẽ có Model,Controller,View , và các route tương ứng
